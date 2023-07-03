@@ -10,44 +10,51 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./assets/style/style.css">
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
   <!-- Sign-up form start -->
+  <div class="container" id="form-container">
+    <div  class="left-container">
+      <h1 class="left-container-heading">Stay updated!</h1>
+      <p class="left-container-text">  Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="left-container-list">
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form id="email-form" class="left-container-form">
+        <label for="email" class="left-container-form-label"></label>
+          <p class="label">Email Address</p>
+          <p id ="error-message" class="invalid-email hide">Valid email required</p>
+        </label>
+        <input type="text"  id="email-input" class="left-container-form-input" placeholder="email@company.com">
+        <button class="left-container-form-button" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
 
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
+    <div class="right-container">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+  </div>
   <!-- Success message start -->
 
-  Thanks for subscribing!
+  <div id="success-message" class="success-message-page hide">
+  <div class="success-message-icon-container">
+    <img class="success-message-icon" src="assets/images/icon-success.svg" alt="">
+  </div>
+  <h1 class="success-message">Thanks for subscribing!</h1>
+  <div class="success-text">A confirmation email has been sent to <span id="received-email"></span>.
+    Please open it and click the button inside to confirm your subscription.</div>
 
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
+  <button id="back-button" class="dismiss-button" type="submit">Dismiss message</button>
+  </div>
 
   <!-- Success message end -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="index.js"></script>
 </body>
 </html>
