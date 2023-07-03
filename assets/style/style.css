@@ -19,3 +19,58 @@
   --font-size: 16px;
   --font-family:  [Roboto](https://fonts.google.com/specimen/Roboto);
 }
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+
+  background-color: var(--Dark-Slate-Grey);
+
+}
+.container{
+  display: flex;
+  width: 700px;
+  background-color:white;
+  padding:40px;
+  border-radius:30px;
+}
+
+.left-container{
+  width: 50%;
+}
+.right-container{
+  width:50%;
+}
+.right-container img {
+  width: 100%;
+  height: 100%;
+
+}
+.left-container-heading{
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+.left-container-text{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.left-container-list{
+  list-style: none;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.left-container-list li{
+  background-image: url(/assets/images/icon-success.svg);
+  background-repeat: no-repeat;
+  background-size: auto 17px;
+  padding-left: 30px;
+  margin: 14px 0;
+}
+.left-container-form{
+  width:300px;
+  margin-top:40px;
+}
