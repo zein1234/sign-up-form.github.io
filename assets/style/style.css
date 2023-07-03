@@ -117,3 +117,71 @@ body{
 .hide{
   display:none;
 }
+/* SUCCESSFUL MESSAGE PAGE */
+
+.success-message-page{
+  width:300px;
+  background-color:white;
+  padding:40px;
+  color:hsl(234, 29%, 20%);
+  border-radius: 30px;
+}
+
+.success-message-icon-container{
+  width:50px;
+  height:50px;
+}
+
+.success-message-icon{
+  height:100%;
+  width:100%;
+}
+
+.success-message{
+  font-weight: 700;
+  margin-top:30px;
+  font-size: 2.5rem;
+}
+
+.success-text{
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+#received-email{
+  font-weight:700;
+}
+
+.dismiss-button{
+  background-color: hsl(234, 29%, 20%);
+  color:white;
+  border-radius:10px;
+  width: 300px;
+  padding:15px 0;
+  font-size:0.9rem;
+  margin-top:30px;
+  border-style:none;
+}
+
+.dismiss-button:hover{
+  background-color: rgb(255, 92, 92);
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE WEBPAGE */
+
+@media(max-width:768px){
+  .container{
+      flex-direction:column-reverse;
+      border-radius:0;
+  }
+
+  .left-container{
+      width:100%;
+  }
+
+  .right-container{
+      width:100%;
+  }
+}
