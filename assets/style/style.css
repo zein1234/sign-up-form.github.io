@@ -1,15 +1,15 @@
 *{
   margin: 0;
   padding: 0;
-  
+
   font-family:"Roboto", sans-serif;
 
 }
 
 :root {
   /* Colors*/
-  --color-primary: hsl(4, 100%, 67%);
-  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --color-primary: hsl(227, 75%, 78%);
+  --Dark-Slate-Grey: hsl(240, 13%, 81%);
   --Charcoal-Grey: hsl(235, 18%, 26%);
   --Grey: hsl(231, 7%, 60%);
   --White: hsl(0, 0%, 100%);
@@ -42,6 +42,7 @@ body{
 }
 .right-container{
   width:50%;
+  margin-left: 5px;
 }
 .right-container img {
   width: 100%;
@@ -90,7 +91,7 @@ body{
 
 .invalid-email{
   font-size:0.8rem;
-  color: rgb(255, 92, 92);
+  color: var(--color-primary);
 }
 
 .left-container-form-input{
@@ -110,7 +111,7 @@ body{
 }
 
 .left-container-form-button:hover{
-  background-color: rgb(255, 92, 92);
+  background-color: var(--color-primary);
   cursor: pointer;
 }
 
